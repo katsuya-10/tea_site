@@ -1,0 +1,179 @@
+/* ヘッター 
+-----------------------------------*/
+.title {
+  font-size: 26px;
+  list-style: none;
+}
+
+.header-nav {
+  display: flex;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-top: 34px;
+  list-style: none;
+}
+.header-nav li {
+  margin-left: 36px;
+}
+.header-nav a {
+  color: #432;
+}
+.header-nav a:hover {
+  color: #0bd;
+}
+
+.page-header {
+  display: flex;
+}
+
+.wrapper {
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+/* header image */
+#top {
+  /* background-color: #fcba03; */
+  height: 100px;
+  margin-bottom: 40px;
+}
+#top .page-title {
+  text-align: center;
+}
+
+/* top image */
+.top-image {
+  text-align:center;
+  width: 100%; 
+}
+
+/* 理由
+-----------------------------------*/
+.news-contents wrapper {
+  text-align:center;
+}
+
+.post-info {
+  position: relative;
+  padding-top: 4px;
+  margin-bottom: 40px;
+}
+
+/* 罪悪感からの開放 */
+.post-title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  width: 8em;
+}
+
+.grid {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 6%;
+  margin-bottom: 50px;
+}
+
+h2 {
+  text-align:center;
+}
+
+/* 組み合わせ 
+-----------------------------------*/
+.conbination wrapper {
+  text-align:center;
+}
+
+.conbination-info {
+  position: relative;
+  padding-top: 4px;
+  margin-bottom: 40px;
+}
+
+/* お気に入りの一杯を見つけよう */
+.conbination-info {
+  background: #fcba03;
+  margin-top: 100px;
+}
+
+.conbination-title {
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
+}
+
+.grid {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 6%;
+  margin-bottom: 50px;
+}
+
+h4 {
+  text-align:center;
+}
+
+.menu-content {
+  text-align: center;
+}
+
+/* インスタ 
+-----------------------------------*/
+.instagram {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width:300px;
+  min-width:300px;
+}
+
+
+/* YouTube
+-----------------------------------*/
+.YouTube {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width:300px;
+  min-width:300px;
+}
+
+/* google map 
+-----------------------------------*/
+#location {
+    padding: 4% 0;
+}
+#location .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.location-info {
+    width: 22%;
+}
+.location-info p {
+    padding: 12px 10px;
+}
+
+
+
+/* フッター 
+-----------------------------------*/
+footer {
+  background: #432;
+  text-align: center;
+  padding: 26px 0;
+  margin-top: 50px;
+}
+footer p {
+  color: #fff;
+  font-size: 15px;
+}
+footer li {
+  color: #fff;
+  font-size: 15px;  
+list-style: none;
+}
