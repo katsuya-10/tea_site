@@ -32,12 +32,14 @@
   padding: 0 4%;
 }
 
+
 /* header image */
 #top {
   /* background-color: #fcba03; */
   height: 100px;
   margin-bottom: 40px;
 }
+
 #top .page-title {
   text-align: center;
 }
@@ -54,17 +56,16 @@
   text-align:center;
 }
 
-.post-info {
-  position: relative;
-  padding-top: 4px;
-  margin-bottom: 40px;
+/* 罪悪感からの開放 */
+.top-title {
+  margin: 50px auto;
+  width: 8em;
 }
 
-/* 罪悪感からの開放 */
+/* 共通
+-----------------------------------*/
 .post-title {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px;
+  margin: 50px auto;
   width: 8em;
 }
 
@@ -80,28 +81,25 @@ h2 {
   text-align:center;
 }
 
-/* 組み合わせ 
------------------------------------*/
-.conbination wrapper {
+h4 {
   text-align:center;
 }
 
-.conbination-info {
-  position: relative;
-  padding-top: 4px;
-  margin-bottom: 40px;
+/* 組み合わせ 
+-----------------------------------*/
+.conbination {
+  text-align:center;
 }
 
 /* お気に入りの一杯を見つけよう */
 .conbination-info {
   background: #fcba03;
-  margin-top: 100px;
+  height: 100px;
 }
 
 .conbination-title {
   color: #fff;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   text-align:center;
 }
 
@@ -113,46 +111,82 @@ h2 {
   margin-bottom: 50px;
 }
 
-h4 {
-  text-align:center;
-}
+/* メニュー 
+-----------------------------------*/
+
 
 .menu-content {
   text-align: center;
 }
-
-/* インスタ 
------------------------------------*/
-.instagram {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  max-width:300px;
-  min-width:300px;
+.menu-info {
+  background: #fcba03;
+  height: 100px;
 }
 
-
-/* YouTube
+.menu-image {
+  padding-top: 50px;
+}
+/* インスタ 
 -----------------------------------*/
-.YouTube {
+
+.insta-content {
+  text-align: center;
+}
+
+.insta-info {
+  background: #fcba03;
+  height: 100px;
+}
+
+.instagram {
+  padding-top:50px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  max-width:300px;
+  max-width:560px;
+  min-width:500px;
+}
+
+/* Youtube
+-----------------------------------*/
+
+.Youtube-info {
+  background: #fcba03;
+  height: 100px;
+}
+.Youtube {
+  padding-top:50px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   min-width:300px;
 }
 
 /* google map 
 -----------------------------------*/
-#location {
-    padding: 4% 0;
+.google-info .post-title {
+  position: relative;
+  font-size: 1.5rem;
+  font-family: "Cinzel", YuMincho, "HiraginoMincho ProN", "MS PMincho", Meiryo, serif;
+  letter-spacing: 2px;
+  font-weight: bold;  
 }
+.google-info {
+  background: #fcba03;
+  height: 100px;
+}
+.sub-title {
+  text-align: center;
+}
+
 #location .wrapper {
     display: flex;
+    padding-top:50px;
+    max-width: 1100px;
     justify-content: space-between;
 }
 .location-info {
-    width: 22%;
+    width: 100%;
 }
 .location-info p {
     padding: 12px 10px;
