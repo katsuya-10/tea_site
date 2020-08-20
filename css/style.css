@@ -1,5 +1,6 @@
 /* ヘッター 
 -----------------------------------*/
+
 .title {
   font-size: 26px;
   list-style: none;
@@ -15,7 +16,7 @@
 .header-nav li {
   margin-left: 36px;
 }
-.header-nav a {
+.header-nav {
   color: #432;
 }
 .header-nav a:hover {
@@ -30,6 +31,7 @@
   max-width: 2000px;
   margin: 0 auto;
   padding: 0 4%;
+  background-image:url()
 }
 
 
@@ -64,6 +66,15 @@
 
 /* 共通
 -----------------------------------*/
+body {
+  background-image: url("../images/base_image.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
 .post-title {
   margin: 50px auto;
   width: 8em;
@@ -92,8 +103,17 @@ h4 {
 }
 
 /* お気に入りの一杯を見つけよう */
+
+.conbination .post-title {
+  position: relative;
+  font-size: 1.5rem;
+  font-family: "Cinzel", YuMincho, "HiraginoMincho ProN", "MS PMincho", Meiryo, serif;
+  letter-spacing: 2px;
+  font-weight: bold;  
+}
+
 .conbination-info {
-  background: #fcba03;
+  background: #05331e;
   height: 100px;
 }
 
@@ -118,8 +138,17 @@ h4 {
 .menu-content {
   text-align: center;
 }
+
+.menu-info .post-title {
+  position: relative;
+  font-size: 1.5rem;
+  font-family: "Cinzel", YuMincho, "HiraginoMincho ProN", "MS PMincho", Meiryo, serif;
+  letter-spacing: 2px;
+  font-weight: bold;  
+}
+
 .menu-info {
-  background: #fcba03;
+  background: #05331e;
   height: 100px;
 }
 
@@ -132,9 +161,15 @@ h4 {
 .insta-content {
   text-align: center;
 }
-
+.insta-info .post-title {
+  position: relative;
+  font-size: 1.5rem;
+  font-family: "Cinzel", YuMincho, "HiraginoMincho ProN", "MS PMincho", Meiryo, serif;
+  letter-spacing: 2px;
+  font-weight: bold;  
+}
 .insta-info {
-  background: #fcba03;
+  background: #05331e;
   height: 100px;
 }
 
@@ -149,9 +184,15 @@ h4 {
 
 /* Youtube
 -----------------------------------*/
-
+.Youtube-info .post-title {
+  position: relative;
+  font-size: 1.5rem;
+  font-family: "Cinzel", YuMincho, "HiraginoMincho ProN", "MS PMincho", Meiryo, serif;
+  letter-spacing: 2px;
+  font-weight: bold;  
+}
 .Youtube-info {
-  background: #fcba03;
+  background: #05331e;
   height: 100px;
 }
 .Youtube {
@@ -172,7 +213,7 @@ h4 {
   font-weight: bold;  
 }
 .google-info {
-  background: #fcba03;
+  background: #05331e;
   height: 100px;
 }
 .sub-title {
@@ -197,7 +238,7 @@ h4 {
 /* フッター 
 -----------------------------------*/
 footer {
-  background: #432;
+  background: #05331e;
   text-align: center;
   padding: 26px 0;
   margin-top: 50px;
