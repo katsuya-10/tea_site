@@ -25,13 +25,14 @@
 
 .page-header {
   display: flex;
+  justify-content: space-between;
+  background-color:#177e80;
 }
 
 .wrapper {
   max-width: 2000px;
   margin: 0 auto;
   padding: 0 4%;
-  background-image:url()
 }
 
 
@@ -39,11 +40,12 @@
 #top {
   /* background-color: #fcba03; */
   height: 100px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 #top .page-title {
   text-align: center;
+
 }
 
 /* top image */
@@ -58,22 +60,13 @@
   text-align:center;
 }
 
-/* 罪悪感からの開放 */
-.top-title {
-  margin: 50px auto;
-  width: 8em;
+/* コンセプト */
+.concept-info {
+  background: #177e80;
 }
 
 /* 共通
 -----------------------------------*/
-body {
-  background-image: url("../images/base_image.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-}
 
 .post-title {
   margin: 50px auto;
@@ -113,7 +106,7 @@ h4 {
 }
 
 .conbination-info {
-  background: #05331e;
+  background: #177e80;
   height: 100px;
 }
 
@@ -139,42 +132,25 @@ h4 {
   text-align: center;
 }
 
-.menu-info .post-title {
-  position: relative;
-  font-size: 1.5rem;
-  font-family: "Cinzel", YuMincho, "HiraginoMincho ProN", "MS PMincho", Meiryo, serif;
-  letter-spacing: 2px;
-  font-weight: bold;  
-}
-
 .menu-info {
-  background: #05331e;
+  background: #177e80;
   height: 100px;
 }
 
-.menu-image {
-  padding-top: 50px;
-}
 /* インスタ 
 -----------------------------------*/
 
 .insta-content {
   text-align: center;
 }
-.insta-info .post-title {
-  position: relative;
-  font-size: 1.5rem;
-  font-family: "Cinzel", YuMincho, "HiraginoMincho ProN", "MS PMincho", Meiryo, serif;
-  letter-spacing: 2px;
-  font-weight: bold;  
-}
+
 .insta-info {
-  background: #05331e;
+  background: #177e80;
   height: 100px;
 }
 
 .instagram {
-  padding-top:50px;
+  padding: 10px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -184,19 +160,13 @@ h4 {
 
 /* Youtube
 -----------------------------------*/
-.Youtube-info .post-title {
-  position: relative;
-  font-size: 1.5rem;
-  font-family: "Cinzel", YuMincho, "HiraginoMincho ProN", "MS PMincho", Meiryo, serif;
-  letter-spacing: 2px;
-  font-weight: bold;  
-}
+
 .Youtube-info {
-  background: #05331e;
+  background: #177e80;
   height: 100px;
 }
 .Youtube {
-  padding-top:50px;
+  padding-top:5px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -205,15 +175,9 @@ h4 {
 
 /* google map 
 -----------------------------------*/
-.google-info .post-title {
-  position: relative;
-  font-size: 1.5rem;
-  font-family: "Cinzel", YuMincho, "HiraginoMincho ProN", "MS PMincho", Meiryo, serif;
-  letter-spacing: 2px;
-  font-weight: bold;  
-}
+
 .google-info {
-  background: #05331e;
+  background: #177e80;
   height: 100px;
 }
 .sub-title {
@@ -221,24 +185,26 @@ h4 {
 }
 
 #location .wrapper {
-    display: flex;
-    padding-top:50px;
-    max-width: 1100px;
-    justify-content: space-between;
+  display: flex;
+  padding-top:50px;
+  max-width: 1100px;
+  justify-content: space-between;
 }
 .location-info {
-    width: 100%;
+  width: 100%;
 }
 .location-info p {
-    padding: 12px 10px;
+  padding: 12px 10px;
 }
-
+.google-coment {
+  display: flex;
+}
 
 
 /* フッター 
 -----------------------------------*/
 footer {
-  background: #05331e;
+  background: #177e80;
   text-align: center;
   padding: 26px 0;
   margin-top: 50px;
