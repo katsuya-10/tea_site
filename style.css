@@ -1,3 +1,5 @@
+
+
 /* ヘッター 
 -----------------------------------*/
 
@@ -13,20 +15,17 @@
   margin-top: 34px;
   list-style: none;
 }
+
 .header-nav li {
   margin-left: 36px;
-}
-.header-nav {
-  color: #432;
-}
-.header-nav a:hover {
-  color: #0bd;
 }
 
 .page-header {
   display: flex;
   justify-content: space-between;
   background-color:#177e80;
+  position: fixed;
+  width: 100%;
 }
 
 .wrapper {
@@ -36,9 +35,114 @@
 }
 
 
-/* header image */
+/* ロゴ設定
+-----------------------------------*/
+/* HOME */
+li a .Home-logo {
+  background: url("images/Home.png") no-repeat; /* ロールオーバー時のチラつき防止 */
+}
+
+li a .Home-logo {
+  width: 70px;
+  height: 70px;
+  background: url("images/Home.png") no-repeat;
+  display: block;
+  text-indent: -9999px;
+}
+ 
+li a .Home-logo:hover {
+  background-image: url("images/Home2.png");
+}
+
+/* conbination */
+li a .conbination-logo {
+  background: url("images/Tea.png") no-repeat; /* ロールオーバー時のチラつき防止 */
+}
+
+li a .conbination-logo {
+  width: 70px;
+  height: 70px;
+  background: url("images/Tea.png") no-repeat;
+  display: block;
+  text-indent: -9999px;
+}
+ 
+li a .conbination-logo:hover {
+  background-image: url("images/Tea2.png");
+}
+
+/* menu */
+li a .menu-logo {
+  background: url("images/menu.png") no-repeat; /* ロールオーバー時のチラつき防止 */
+}
+
+li a .menu-logo {
+  width: 70px;
+  height: 70px;
+  background: url("images/menu.png") no-repeat;
+  display: block;
+  text-indent: -9999px;
+}
+ 
+li a .menu-logo:hover {
+  background-image: url("images/menu2.png");
+}
+
+/* instagram */
+li a .instagram-logo {
+  background: url("images/Instagram.png") no-repeat; /* ロールオーバー時のチラつき防止 */
+}
+
+li a .instagram-logo {
+  width: 70px;
+  height: 70px;
+  background: url("images/Instagram.png") no-repeat;
+  display: block;
+  text-indent: -9999px;
+}
+ 
+li a .instagram-logo:hover {
+  background-image: url("images/instagram2.png");
+}
+
+/* Youtube */
+li a .Youtube-logo {
+  background: url("images/Youtube.png") no-repeat; /* ロールオーバー時のチラつき防止 */
+}
+
+li a .Youtube-logo {
+  width: 70px;
+  height: 70px;
+  background: url("images/Youtube.png") no-repeat;
+  display: block;
+  text-indent: -9999px;
+}
+ 
+li a .Youtube-logo:hover {
+  background-image: url("images/Youtube2.png");
+}
+
+/* map */
+li a .map-logo {
+  background: url("images/map.png") no-repeat; /* ロールオーバー時のチラつき防止 */
+}
+
+li a .map-logo {
+  width: 70px;
+  height: 70px;
+  background: url("images/map.png") no-repeat;
+  display: block;
+  text-indent: -9999px;
+}
+ 
+li a .map-logo:hover {
+  background-image: url("images/map2.png");
+}
+
+
+/* トップ画像付近
+-----------------------------------*/
 #top {
-  /* background-color: #fcba03; */
   height: 100px;
   margin-bottom: 30px;
 }
@@ -62,6 +166,7 @@
 
 /* コンセプト */
 .concept-info {
+  text-align: center;
   background: #177e80;
 }
 
@@ -91,13 +196,13 @@ h4 {
 
 /* 組み合わせ 
 -----------------------------------*/
-.conbination {
+#conbination {
   text-align:center;
 }
 
 /* お気に入りの一杯を見つけよう */
 
-.conbination .post-title {
+#conbination .post-title {
   position: relative;
   font-size: 1.5rem;
   font-family: "Cinzel", YuMincho, "HiraginoMincho ProN", "MS PMincho", Meiryo, serif;
@@ -128,7 +233,7 @@ h4 {
 -----------------------------------*/
 
 
-.menu-content {
+#menu {
   text-align: center;
 }
 
@@ -138,9 +243,9 @@ h4 {
 }
 
 /* インスタ 
------------------------------------*/
+----------------------------------*/
 
-.insta-content {
+#insta {
   text-align: center;
 }
 
@@ -158,10 +263,11 @@ h4 {
   min-width:500px;
 }
 
-/* Youtube
+/* YouTube
 -----------------------------------*/
 
 .Youtube-info {
+  text-align: center;
   background: #177e80;
   height: 100px;
 }
@@ -177,6 +283,7 @@ h4 {
 -----------------------------------*/
 
 .google-info {
+  text-align: center;
   background: #177e80;
   height: 100px;
 }
@@ -217,4 +324,12 @@ footer li {
   color: #fff;
   font-size: 15px;  
 list-style: none;
+}
+
+/* モバイル */
+@media (max-width: 600px) {
+  .top {
+    flex-direction: column;
+    align-items: center;
+  }
 }
