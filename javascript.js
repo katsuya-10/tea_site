@@ -1,54 +1,30 @@
+// ロゴスクロール
+
 $(function () {
-  $('#top').on('click', function () {
-    $('html,body').animate({
-      scrollTop: 0
-    }, slow, 'swing');
+  // #で始まるアンカーをクリックした場合に処理
+  $('.header-nav li a[href^=#]').click(function () {
+    // 移動先を50px上にずらす
+    var adjust = 50;
+    // スクロールの速度
+    var speed = 400; // ミリ秒
+    // アンカーの値取得
+    var href = $(this).attr("href");
+    // 移動先を取得
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    // 移動先を調整
+    var position = target.offset().top - adjust;
+    // スムーススクロール
+    $('body,html').animate({ scrollTop: position }, speed, 'swing');
     return false;
   });
 });
 
-$(function () {
-  $('#conbination').on('click', function () {
-    var targetTop = $('#conbination').offset().top - 1000;
-    $('html,body').animate({
-      scrollTop: targetTop
-    }, 500);
-    return false;
-  });
-});
 
-$(function () {
-  $('#menu').on('click', function () {
-    $('html,body').animate({
-      scrollTop: 0
-    }, 500);
-    return false;
-  });
-});
+// トップスライダー
 
-$(function () {
-  $('#insta').on('click', function () {
-    $('html,body').animate({
-      scrollTop: 0
-    }, 500);
-    return false;
-  });
-});
-
-$(function () {
-  $('#YouTube').on('click', function () {
-    $('html,body').animate({
-      scrollTop: 0
-    }, 500);
-    return false;
-  });
-});
-
-$(function () {
-  $('#location').on('click', function () {
-    $('html,body').animate({
-      scrollTop: 0
-    }, 500);
-    return false;
+$(document).ready(function () {
+  $('.slider').bxSlider({
+    auto: true,
+    pause: 5000,
   });
 });

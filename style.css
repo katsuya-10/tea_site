@@ -32,6 +32,7 @@
   max-width: 2000px;
   margin: 0 auto;
   padding: 0 4%;
+  
 }
 
 
@@ -144,12 +145,16 @@ li a .map-logo:hover {
 -----------------------------------*/
 #top {
   height: 100px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 #top .page-title {
   text-align: center;
+}
 
+.bx-wrapper {
+  max-width: 100%;
+  margin-bottom: 40px;
 }
 
 /* top image */
@@ -172,30 +177,30 @@ li a .map-logo:hover {
 
 /* 共通
 -----------------------------------*/
-body {
-  background-image: url("images/background7.png");
+/* 背景画像 */
+.big-top {
+  background-position: center top;
+  background-repeat: repeat;
+}
+#all {
+  background-image: url("images/background6.png");
 }
 
-
-.post-title {
-  margin: 50px auto;
-  width: 8em;
-}
-
+/* グリッド */
 .grid {
   display: grid;
   gap: 26px;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 6%;
-  margin-bottom: 50px;
+  margin-top: 30px;
+  margin-bottom: 5px;
 }
 
 h2 {
   text-align:center;
 }
 
-h4 {
-  text-align:center;
+p {
+  text-align: left;
 }
 
 /* 組み合わせ 
@@ -204,39 +209,13 @@ h4 {
   text-align:center;
 }
 
-/* お気に入りの一杯を見つけよう */
-
-#conbination .post-title {
-  position: relative;
-  font-size: 1.5rem;
-  font-family: "Cinzel", YuMincho, "HiraginoMincho ProN", "MS PMincho", Meiryo, serif;
-  letter-spacing: 2px;
-  font-weight: bold;  
-}
-
 .conbination-info {
   background: #177e80;
   height: 100px;
 }
 
-.conbination-title {
-  color: #fff;
-  margin: auto;
-  text-align:center;
-}
-
-.grid {
-  display: grid;
-  gap: 26px;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 6%;
-  margin-bottom: 50px;
-}
-
 /* メニュー 
 -----------------------------------*/
-
-
 #menu {
   text-align: center;
 }
@@ -246,9 +225,13 @@ h4 {
   height: 100px;
 }
 
+.menu-image {
+  padding-top: 50px;
+  padding-bottom: 45px; 
+}
+
 /* インスタ 
 ----------------------------------*/
-
 #insta {
   text-align: center;
 }
@@ -260,14 +243,13 @@ h4 {
 
 /* YouTube
 -----------------------------------*/
-
 .Youtube-info {
   text-align: center;
   background: #177e80;
   height: 100px;
 }
 .Youtube {
-  padding-top:5px;
+  padding: 50px 0px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -310,7 +292,6 @@ h4 {
 footer {
   background: #177e80;
   text-align: center;
-  padding: 26px 0;
   margin-top: 50px;
 }
 footer p {
@@ -323,9 +304,10 @@ footer li {
 list-style: none;
 }
 
-/* モバイル */
+/* モバイル 
+-----------------------------------*/
 @media (max-width: 600px) {
-  .top {
+  #top {
     flex-direction: column;
     align-items: center;
   }
