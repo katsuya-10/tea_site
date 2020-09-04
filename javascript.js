@@ -2,9 +2,9 @@
 
 $(function () {
   // #で始まるアンカーをクリックした場合に処理
-  $('.header-nav li a[href^=#]').click(function () {
+  $('.s_02 a[href^="#"]').click(function () {
     // 移動先を50px上にずらす
-    var adjust = 50;
+    var adjust = 135;
     // スクロールの速度
     var speed = 400; // ミリ秒
     // アンカーの値取得
