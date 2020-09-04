@@ -1,4 +1,6 @@
-
+html {
+  width: 100%;  /* autoによる既定値 */
+}
 
 /* ヘッター 
 -----------------------------------*/
@@ -84,7 +86,7 @@ li a .menu-logo {
   display: block;
   text-indent: -9999px;
 }
- 
+
 li a .menu-logo:hover {
   background-image: url("images/menu2.png");
 }
@@ -304,25 +306,86 @@ footer li {
 list-style: none;
 }
 
-/* モバイル 
------------------------------------*/
+/* モバイル版
+------------------------------- */
 @media (max-width: 600px) {
-  #top {
-    flex-direction: column;
-    align-items: center;
-  }
+    .page-header {
+        flex-direction: column;
+        align-items: center;
+    }
+    /* HEADER */
+    .header-nav {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+    .header-nav li {
+        margin: 0 20px;
+    }
 
-  /* header */
-  .header-nav {
-    margin-top 10px;
-  }
-  .header-nav li {
-    margin: 0 20px;
-  }
+    /* トップ画像 */
 
-  /* home */
-  .big-top {
-    margin-top:20%;
-  }
+    #news .page-title {
+        margin-top: 30px;
+    }
+    article,
+    aside {
+        width: 100%;
+    }
+    aside {
+        margin-top: 60px;
+    }
+    .post-info {
+        margin-bottom: 30px;
+    }
+    .post-date {
+        width: 70px;
+        height: 70px;
+        font-size: 1rem;
+    }
+    .post-date span {
+        font-size: 0.875rem;
+        padding-top: 2px;
+    }
+    .post-title {
+        font-size: 1.375rem;
+    }
+    .post-cat {
+        font-size: 0.875rem;
+        margin-top: 10px;
+    }
+    .post-title,
+    .post-cat {
+        margin-left: 80px;
+    }
+
+    /* MENU */
+    .menu-content {
+        margin-top: 20%;
+    }
+
+    /* CONTACT */
+    #contact .page-title {
+        margin-top: 40px;
+    }
+
+    /* フォーム */
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        max-width: 100%;
+    }
+
+    /* 店舗情報・地図 / SNS */
+    #location .wrapper,
+    #sns .wrapper {
+        flex-direction: column;
+    }
+    .location-info,
+    .location-map,
+    .sns-box {
+        width: 100%;
+    }
+    .sns-box {
+        margin-bottom: 30px;
+    }
 }
-
