@@ -2,8 +2,41 @@ html {
   width: 100%;  /* autoによる既定値 */
 }
 
+/* 共通
+-----------------------------------*/
+
+/* 背景画像 */
+.big-top {
+  background-position: center top;
+  background-repeat: repeat;
+}
+#all {
+  background-image: url("images/background6.png");
+}
+
+/* グリッド */
+.grid {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+h2 {
+  text-align:center;
+}
+
+p {
+  text-align: left;
+}
+
 /* ヘッター 
 -----------------------------------*/
+
+.page-header {
+  height:138px;
+}
 
 .title {
   font-size: 26px;
@@ -27,22 +60,27 @@ html {
   justify-content: space-between;
   background-color:#177e80;
   position: fixed;
-  width: 100%;
 }
 
 .wrapper {
-  max-width: 2000px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 4%;
-  
+  margin-bottom: 30px;
 }
-
 
 /* ロゴ設定
 -----------------------------------*/
+
 /* HOME */
+
+a .logo {
+  padding-top: 10px;
+}
+
 li a .Home-logo {
   background: url("images/Home.png") no-repeat; /* ロールオーバー時のチラつき防止 */
+
 }
 
 li a .Home-logo {
@@ -155,14 +193,14 @@ li a .map-logo:hover {
 }
 
 .bx-wrapper {
-  max-width: 100%;
+  width: 100%;
   margin-bottom: 40px;
 }
 
 /* top image */
-.top-image {
+.slider {
   text-align:center;
-  width: 100%; 
+  width: 100%;
 }
 
 /* 理由
@@ -175,34 +213,7 @@ li a .map-logo:hover {
 .concept-info {
   text-align: center;
   background: #177e80;
-}
-
-/* 共通
------------------------------------*/
-/* 背景画像 */
-.big-top {
-  background-position: center top;
-  background-repeat: repeat;
-}
-#all {
-  background-image: url("images/background6.png");
-}
-
-/* グリッド */
-.grid {
-  display: grid;
-  gap: 26px;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 30px;
-  margin-bottom: 5px;
-}
-
-h2 {
-  text-align:center;
-}
-
-p {
-  text-align: left;
+  height: 150px;
 }
 
 /* 組み合わせ 
@@ -306,86 +317,327 @@ footer li {
 list-style: none;
 }
 
-/* モバイル版
-------------------------------- */
-@media (max-width: 600px) {
-    .page-header {
-        flex-direction: column;
-        align-items: center;
-    }
-    /* HEADER */
-    .header-nav {
-        font-size: 1rem;
-        margin-top: 10px;
-    }
-    .header-nav li {
-        margin: 0 20px;
-    }
-
-    /* トップ画像 */
-
-    #news .page-title {
-        margin-top: 30px;
-    }
-    article,
-    aside {
-        width: 100%;
-    }
-    aside {
-        margin-top: 60px;
-    }
-    .post-info {
-        margin-bottom: 30px;
-    }
-    .post-date {
-        width: 70px;
-        height: 70px;
-        font-size: 1rem;
-    }
-    .post-date span {
-        font-size: 0.875rem;
-        padding-top: 2px;
-    }
-    .post-title {
-        font-size: 1.375rem;
-    }
-    .post-cat {
-        font-size: 0.875rem;
-        margin-top: 10px;
-    }
-    .post-title,
-    .post-cat {
-        margin-left: 80px;
-    }
-
-    /* MENU */
-    .menu-content {
-        margin-top: 20%;
-    }
-
-    /* CONTACT */
-    #contact .page-title {
-        margin-top: 40px;
-    }
-
-    /* フォーム */
-    input[type="text"],
-    input[type="email"],
-    textarea {
-        max-width: 100%;
-    }
-
-    /* 店舗情報・地図 / SNS */
-    #location .wrapper,
-    #sns .wrapper {
-        flex-direction: column;
-    }
-    .location-info,
-    .location-map,
-    .sns-box {
-        width: 100%;
-    }
-    .sns-box {
-        margin-bottom: 30px;
-    }
+/* モバイル
+-----------------------------------*/
+@media screen and (max-width: 300px) {
+  html {
+  width: 100%;  /* autoによる既定値 */
 }
+
+/* 共通
+-----------------------------------*/
+
+/* 背景画像 */
+.big-top {
+  background-position: center top;
+  background-repeat: repeat;
+}
+#all {
+  background-image: url("images/background6.png");
+}
+
+/* グリッド */
+.grid {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+h2 {
+  text-align:center;
+}
+
+p {
+  text-align: left;
+}
+
+/* ヘッター 
+-----------------------------------*/
+
+.page-header {
+  height:138px;
+}
+
+.title {
+  font-size: 26px;
+  list-style: none;
+}
+
+.header-nav {
+  display: flex;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-top: 34px;
+  list-style: none;
+}
+
+.header-nav li {
+  margin-left: 36px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  background-color:#177e80;
+  position: fixed;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 4%;
+  margin-bottom: 30px;
+}
+
+/* ロゴ設定
+-----------------------------------*/
+
+/* HOME */
+
+a .logo {
+  padding-top: 10px;
+}
+
+li a .Home-logo {
+  background: url("images/Home.png") no-repeat; /* ロールオーバー時のチラつき防止 */
+
+}
+
+li a .Home-logo {
+  width: 70px;
+  height: 70px;
+  background: url("images/Home.png") no-repeat;
+  display: block;
+  text-indent: -9999px;
+}
+ 
+li a .Home-logo:hover {
+  background-image: url("images/Home2.png");
+}
+
+/* conbination */
+li a .conbination-logo {
+  background: url("images/Tea.png") no-repeat; /* ロールオーバー時のチラつき防止 */
+}
+
+li a .conbination-logo {
+  width: 70px;
+  height: 70px;
+  background: url("images/Tea.png") no-repeat;
+  display: block;
+  text-indent: -9999px;
+}
+ 
+li a .conbination-logo:hover {
+  background-image: url("images/Tea2.png");
+}
+
+/* menu */
+li a .menu-logo {
+  background: url("images/menu.png") no-repeat; /* ロールオーバー時のチラつき防止 */
+}
+
+li a .menu-logo {
+  width: 70px;
+  height: 70px;
+  background: url("images/menu.png") no-repeat;
+  display: block;
+  text-indent: -9999px;
+}
+
+li a .menu-logo:hover {
+  background-image: url("images/menu2.png");
+}
+
+/* instagram */
+li a .instagram-logo {
+  background: url("images/Instagram.png") no-repeat; /* ロールオーバー時のチラつき防止 */
+}
+
+li a .instagram-logo {
+  width: 70px;
+  height: 70px;
+  background: url("images/Instagram.png") no-repeat;
+  display: block;
+  text-indent: -9999px;
+}
+ 
+li a .instagram-logo:hover {
+  background-image: url("images/instagram2.png");
+}
+
+/* Youtube */
+li a .Youtube-logo {
+  background: url("images/Youtube.png") no-repeat; /* ロールオーバー時のチラつき防止 */
+}
+
+li a .Youtube-logo {
+  width: 70px;
+  height: 70px;
+  background: url("images/Youtube.png") no-repeat;
+  display: block;
+  text-indent: -9999px;
+}
+ 
+li a .Youtube-logo:hover {
+  background-image: url("images/Youtube2.png");
+}
+
+/* map */
+li a .map-logo {
+  background: url("images/map.png") no-repeat; /* ロールオーバー時のチラつき防止 */
+}
+
+li a .map-logo {
+  width: 70px;
+  height: 70px;
+  background: url("images/map.png") no-repeat;
+  display: block;
+  text-indent: -9999px;
+}
+ 
+li a .map-logo:hover {
+  background-image: url("images/map2.png");
+}
+
+
+/* トップ画像付近
+-----------------------------------*/
+#top {
+  height: 100px;
+  margin-bottom: 40px;
+}
+
+#top .page-title {
+  text-align: center;
+}
+
+.bx-wrapper {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+/* top image */
+.slider {
+  text-align:center;
+  width: 100%;
+}
+
+/* 理由
+-----------------------------------*/
+.news-contents wrapper {
+  text-align:center;
+}
+
+/* コンセプト */
+.concept-info {
+  text-align: center;
+  background: #177e80;
+  height: 150px;
+}
+
+/* 組み合わせ 
+-----------------------------------*/
+#conbination {
+  text-align:center;
+}
+
+.conbination-info {
+  background: #177e80;
+  height: 100px;
+}
+
+/* メニュー 
+-----------------------------------*/
+#menu {
+  text-align: center;
+}
+
+.menu-info {
+  background: #177e80;
+  height: 100px;
+}
+
+.menu-image {
+  padding-top: 50px;
+  padding-bottom: 45px; 
+}
+
+/* インスタ 
+----------------------------------*/
+#insta {
+  text-align: center;
+}
+
+.insta-info {
+  background: #177e80;
+  height: 100px;
+}
+
+/* YouTube
+-----------------------------------*/
+.Youtube-info {
+  text-align: center;
+  background: #177e80;
+  height: 100px;
+}
+.Youtube {
+  padding: 50px 0px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  min-width:300px;
+}
+
+/* google map 
+-----------------------------------*/
+
+.google-info {
+  text-align: center;
+  background: #177e80;
+  height: 100px;
+}
+.sub-title {
+  text-align: center;
+}
+
+#location .wrapper {
+  display: flex;
+  padding-top:50px;
+  padding-left:0px;
+  padding-right:0px;
+  max-width: 1100px;
+  justify-content: space-between;
+}
+.location-info {
+  width: 100%;
+}
+.location-info p {
+  padding: 12px 10px;
+}
+.google-coment {
+  display: flex;
+}
+
+
+/* フッター 
+-----------------------------------*/
+footer {
+  background: #177e80;
+  text-align: center;
+  margin-top: 50px;
+}
+footer p {
+  color: #fff;
+  font-size: 15px;
+}
+footer li {
+  color: #fff;
+  font-size: 15px;  
+list-style: none;
+}
+
+}
+
